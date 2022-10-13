@@ -14,8 +14,9 @@ jobs:
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          cd download
-          cd deploy-project/ deploy-project
+          cd download/deploy-project
+          docker stop project1
+          docker rm project1
           docker build -t deploy-project .
           docker run --name project1 -d -p 8000:8000 deploy-project
           
