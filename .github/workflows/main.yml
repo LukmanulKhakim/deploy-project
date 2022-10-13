@@ -16,6 +16,6 @@ jobs:
         script: |
           mkdir createdFromGithub
           cd createdFromGithub
-          touch sucses.txt
-          echo "sucses create from github" >> sucses.txt
+          touch halo.txt
+          echo "Hello i'm created from github action" >> halo.txt
  
