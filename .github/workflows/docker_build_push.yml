@@ -39,8 +39,8 @@ jobs:
               cd download/deploy-project
               docker stop project1
               docker rm project1
-              docker rmi project1
-              docker run --name project1 --link mysqlbe12 -d -p 8000:8000 lukman31/deploy-project
+              docker rmi lukman31/deploy-project
+              docker run --name project1 --link mysqlbe12 -d -p 8000:8000 lukman31/lukman31/deploy-project
 
 
 
