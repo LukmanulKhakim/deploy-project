@@ -15,6 +15,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd download/deploy-project
+          
           docker stop project1
           docker rm project1
           docker build -t deploy-project .
