@@ -54,7 +54,7 @@ func main() {
 
 	e.GET("/users", AllUser(dbConn))
 	e.GET("/hello", func(c echo.Context) error {
-		return c.JSON(http.StatusOK, "hello world")
+		return c.JSON(http.StatusOK, "hello ")
 	})
 	e.Start(":8000")
 }
