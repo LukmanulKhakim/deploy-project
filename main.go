@@ -51,7 +51,7 @@ func main() {
 	dbConn := connectDB()
 	dbConn.AutoMigrate(&User{})
 	e.Use(middleware.Logger())
-
+	//edit
 	e.GET("/users", AllUser(dbConn))
 	e.GET("/hello", func(c echo.Context) error {
 		return c.JSON(http.StatusOK, "hello ")
